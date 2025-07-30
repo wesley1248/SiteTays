@@ -1,11 +1,8 @@
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+/* Reset e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -14,11 +11,18 @@ html, body {
     padding: 0;
 }
 
-body {
-    background: linear-gradient(135deg, #9370db 0%, #ba55d3 30%, #da70d6 60%, #ffb6c1 100% );
-    background-attachment: fixed;
-}
-footer.footer {
-    background-color: white;
+/* Configurações responsivas */
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
 }
 
+/* Foco customizado para acessibilidade */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
