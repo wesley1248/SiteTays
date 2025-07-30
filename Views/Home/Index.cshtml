@@ -2,6 +2,44 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Surpresa vem ai!!!!</h1>
+@section Styles {
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+}
+
+<nav>
+    <a data-target="first"><i class="far fa-user"></i></a>
+    <a data-target="second"><i class="fas fa-briefcase"></i></a>
+    <a data-target="third"><i class="far fa-file"></i></a>
+    <a data-target="fourth"><i class="far fa-address-card"></i></a>
+</nav>
+
+<div class='app-container'>
+    <!-- Tela inicial -->
+    <div class="home-screen" id="home-screen">
+        <h1>SiteTays</h1>
+    </div>
+
+    <section id='first'>
+        <h1>Perfil</h1>
+    </section>
+
+    <section id='second'>
+        <h1>Portfólio</h1>
+    </section>
+
+    <section id='third'>
+        <h1>Documentos</h1>
+    </section>
+
+    <section id='fourth'>
+        <h1>Contato</h1>
+    </section>
 </div>
+
+<footer class="footer">
+    <a href="#privacy">© 2025 - SiteTays - Privacy</a>
+</footer>
+
+@section Scripts {
+    <script src="~/js/index.js" asp-append-version="true"></script>
+}
