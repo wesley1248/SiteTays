@@ -4,6 +4,7 @@
 
 @section Styles {
     <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/CardProdutosIndex.css" asp-append-version="true" />
 }
 
 <nav>
@@ -16,7 +17,69 @@
 <div class='app-container'>
     <!-- Tela inicial -->
     <div class="home-screen" id="home-screen">
-        <h1>SiteTays</h1>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="product-badge">Novo</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Smartphone Galaxy Pro</h3>
+                    <p class="product-description">Smartphone com tela AMOLED de 6.5", câmera tripla de 64MP e bateria de longa duração.</p>
+                    <div class="product-price">
+                        <span class="current-price">R$ 1.299,90</span>
+                        <span class="old-price">R$ 1.599,90</span>
+                    </div>
+                    <div class="product-stock">
+                        <span class="stock-info">15 disponíveis</span>
+                    </div>
+                    <button class="add-to-cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image laptop">
+                    <div class="product-badge">Oferta</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Notebook UltraBook</h3>
+                    <p class="product-description">Notebook leve com processador Intel i7, 16GB RAM e SSD 512GB ideal para trabalho.</p>
+                    <div class="product-price">
+                        <span class="current-price">R$ 2.899,90</span>
+                        <span class="old-price">R$ 3.299,90</span>
+                    </div>
+                    <div class="product-stock">
+                        <span class="stock-info">8 disponíveis</span>
+                    </div>
+                    <button class="add-to-cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image headphone">
+                    <div class="product-badge">Popular</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Fone Bluetooth Premium</h3>
+                    <p class="product-description">Fone de ouvido wireless com cancelamento de ruído e até 30h de bateria.</p>
+                    <div class="product-price">
+                        <span class="current-price">R$ 299,90</span>
+                    </div>
+                    <div class="product-stock">
+                        <span class="stock-info">25 disponíveis</span>
+                    </div>
+                    <button class="add-to-cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <section id='first'>
